@@ -66,21 +66,21 @@ python GBTesting.py
 
 ## 3. What parameters have you exposed to users of your implementation in order to tune performance? (Also perhaps provide some basic usage examples.)
 1.	n_estimators (int, default=100)
-*	Number of boosting rounds (i.e., number of trees to build).
-*	More estimators can capture complex patterns but may lead to overfitting.
-*	Result Impact
-  -	Increase to better fit of the data, Having Lower Bias
-  -	Decrease for faster training but may lead to underfitting
+  1.	Number of boosting rounds (i.e., number of trees to build).
+  2.	More estimators can capture complex patterns but may lead to overfitting.
+  3.	Result Impact
+  *	Increase to better fit of the data, Having Lower Bias
+  *	Decrease for faster training but may lead to underfitting
 2.	learning_rate (float, default=0.1)
 *	Shrinks the contribution of each tree.
 *	Lower values require more trees but can improve generalization.
-  -	Increase for faster convergence but might overfit quickly
-  -	Decrease for slower training better generalization 
+  *	Increase for faster convergence but might overfit quickly
+  *	Decrease for slower training better generalization 
 3.	max_depth (int, default=3)
 *	Maximum depth of individual regression trees.
 *	Controls the complexity of the weak learners.
-  -	Increase leads to learning more complex relationships but might overfit 
-  -	Decrease might improve the speed of training but might miss important patterns.
+  *	Increase leads to learning more complex relationships but might overfit 
+  *	Decrease might improve the speed of training but might miss important patterns.
 
 ## 4. Are there specific inputs that your implementation has trouble with? Given more time, could you work around these or is it fundamental?
 * The implementation may struggle with very large datasets due to the inefficiency of custom decision tree splitting and recursion.
