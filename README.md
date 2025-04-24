@@ -89,5 +89,5 @@ python GBTesting.py
 ## 4. Are there specific inputs that your implementation has trouble with? Given more time, could you work around these or is it fundamental?
 * The implementation may struggle with very large datasets due to the inefficiency of custom decision tree splitting and recursion.
 * It may have trouble with high-dimensional data because the best split calculation does not scale well with many features.
-* Handling missing values is not implemented, so inputs with missing data could cause errors or incorrect splits.
+* The implementation is not optimized for speed, so it may perform poorly compared to highly optimized libraries like Scikit-learn.
 * The model assumes binary classification and cannot handle multi-class problems without significant modifications.
