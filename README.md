@@ -53,7 +53,7 @@ python GBTesting.py
 ![image_alt](https://github.com/sabarishraja/Project-2-Gradient-Boosting-Classifier-/blob/main/Output%20images/Shallow%20trees.jpeg?raw=true)
 ![image_alt](https://github.com/sabarishraja/Project-2-Gradient-Boosting-Classifier-/blob/main/Output%20images/non-linear%20boundary.jpeg?raw=true)
 
-# Quesions:
+# Questions:
 ## 1. What does the model you have implemented do and when should it be used?
 * The model implements a custom gradient boosting classifier for binary classification tasks.
 * It uses decision trees as base learners to iteratively improve predictions.
