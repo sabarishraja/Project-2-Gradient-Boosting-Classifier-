@@ -73,7 +73,8 @@ python GBTesting.py
 1.	n_estimators (int, default=100)
 *	Number of boosting rounds (i.e., number of trees to build).
 *	More estimators can capture complex patterns but may lead to overfitting.
-*	Result Impact -   *	Increase to better fit of the data, Having Lower Bias *	Decrease for faster training but may lead to underfitting
+*	Increase to better fit of the data, Having Lower Bias
+*	Decrease for faster training but may lead to underfitting
 2.	learning_rate (float, default=0.1)
 *	Shrinks the contribution of each tree.
 *	Lower values require more trees but can improve generalization.
