@@ -63,7 +63,12 @@ python GBTesting.py
 * It also offers a tunable bias–variance trade-off: increasing n_estimators or max_depth reduces bias but may lead to overfitting, while decreasing learning_rate yields more conservative updates, often used in conjunction with more trees.
   
 ## 2. How did you test your model to determine if it is working reasonably correctly?
-
+* The model was tested using a variety of synthetic datasets with different characteristics to evaluate its performance under diverse conditions.
+* Accuracy of the custom implementation was compared against Scikit-learn's GradientBoostingClassifier to ensure reasonable correctness.
+* The impact of high and low learning rates was evaluated to confirm the model's ability to handle different learning dynamics.
+* Shallow trees (max depth of 1) were tested to assess the model's performance with weak learners.
+* Noisy data with mislabeled samples was used to test robustness to imperfect or noisy inputs.
+* Imbalanced class distributions were tested to evaluate how well the model handles skewed datasets.
 ## 3. What parameters have you exposed to users of your implementation in order to tune performance? (Also perhaps provide some basic usage examples.)
 1.	n_estimators (int, default=100)
 *	Number of boosting rounds (i.e., number of trees to build).
